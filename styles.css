@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000000, #ffffff); /* Fundo degradê preto e branco */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #000000; /* Preto */
+    margin-top: 10px;
+}
+
+#logo {
+    width: 188px; /* Ajuste o tamanho da logo conforme necessário */
+    margin-bottom: 0px;
+}
+
+
+#editor {
+    border: 5px solid #000000; /* Azul */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #353535; /* Fundo branco */
+    display: inline-block;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+}
+
+canvas {
+    margin: 10px 0;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #6e6e6e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5c5c5c; /* Tom mais escuro */
+}
+
+input[type="file"] {
+    margin: 10px 0;
+    background-color: #6e6e6e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    background-color: #005fa3;
+}
+
+#logo {
+    width: 188px; /* Ajuste o tamanho da logo conforme necessário */
+    margin: 20px auto 0; /* Centraliza a logo e dá um espaçamento superior */
+    display: block; /* Faz a logo ser um bloco para centralizar */
+}
+

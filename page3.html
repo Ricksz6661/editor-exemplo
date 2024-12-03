@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Imagem</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        .menu {
+            background: linear-gradient(to bottom, #cecece, #fffde7);
+        }
+
+        .menu a {
+            float: left;
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            background-color:rgba(92, 92, 92, 0.555);
+        }
+
+        /* Estilos para o retângulo branco */
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px; /* Espaço entre a navbar e o conteúdo */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+            width: 90%; /* Largura ajustada para o conteúdo */
+            max-width: 800px; /* Largura máxima para o conteúdo */
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left; /* Alinha o conteúdo à esquerda */
+        }
+
+        h1 {
+            color: #333;
+            font-weight: bold; /* Deixa o título em negrito */
+        }
+
+        p {
+            color: #000;
+            font-weight: bold; /* Deixa os parágrafos em negrito */
+            line-height: 1.6; /* Espaçamento entre as linhas para melhor legibilidade */
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="index.html"><strong>Home</strong></a>
+        <a href="page1.html"><strong>Atividade I</strong></a>
+        <a href="page2.html"><strong>Atividade II</strong></a>
+        <a href="page3.html"><strong>Atividade III</strong></a>
+        <a href="page4.html"><strong>Atividade IV</strong></a>
+    </div>
+
+    <!-- Logo acima do conteúdo -->
+    <img id="logo" src="ponto.png" class="logo" alt="Logo" width="10" height="10">
+    <img id="logo" src="editorlogo.png" class="logo" alt="Logo">
+
+    <!-- Retângulo branco com o conteúdo abaixo da navbar -->
+    <div class="content">
+        <h1>Mesclagem</h1>
+        <p>1. Abra as duas imagens no GIMP, com a base sendo a imagem principal.</p>
+        <p>2. Copie a segunda imagem (Ctrl + C) e cole-a na imagem base (Ctrl + V) como uma camada flutuante.</p>
+        <p>3. Ancore a camada flutuante clicando com o botão direito sobre ela e escolhendo "Ancorar Camada".</p>
+        <p>4. Ajuste a opacidade e o modo de mesclagem da camada superior para controlar a fusão entre as imagens.</p>
+        <p>5. Se necessário, adicione uma máscara de camada e pinte para esconder ou revelar partes da imagem, depois exporte o resultado.</p>
+        <img src="mesclagem.PNG" alt="mesclagem">
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Imagem</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        .menu {background: linear-gradient(to bottom, #fdd835, #fffde7); }
+        .menu a {float: left; display: block;
+            color: rgb(255, 255, 255); text-align: center;
+            padding: 14px 16px; text-decoration: none;}
+        .menu a:hover {background-color:rgba(92, 92, 92, 0.555);}
+    </style>
+
+</head>
+<body>
+    <div class="menu">
+        <a href="index.html"><strong>Home</strong></a>
+        <a href="page1.html"><strong>atividade I</strong></a>
+        <a href="page2.html"><strong>Atividade II</strong></a>
+        <a href="page3.html"><strong>Atividade III</strong></a>
+        <a href="page4.html"><strong>Atividade IV</strong></a>
+    </div>
+
+    <h1>.</h1>
+
+     <!-- Logo no topo -->
+     <img id="logo" src="logo.png" class="logo" alt="Logo">
+    <div id="editor">
+        <input type="file" id="upload" accept="image/*">
+        <canvas id="canvas" width="400" height="400"></canvas>
+        <div class="controls">
+            <button onclick="applyFilter('grayscale')">Preto e Branco</button>
+            <button onclick="applyFilter('sepia')">Sépia</button>
+            <button onclick="applyFilter('invert')">Inverter</button>
+            <button onclick="applyFilter('brightness')">Brilho</button>
+            <button onclick="applyFilter('contrast')">Contraste</button>
+            <button onclick="resetImage()">Resetar</button>
+            <button onclick="saveImage()">Salvar Imagem</button> <!-- Botão de Salvar -->
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html>
